@@ -247,7 +247,9 @@ header {
 }
 .items-img {
   border-radius: 5px 5px 0 0;
+  object-fit: cover;
   width: 100%;
+  min-height: 210px;
   height: auto;
 }
 .items-content {
