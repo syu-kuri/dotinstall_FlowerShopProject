@@ -2,172 +2,181 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>osumou flowers</title>
+  <meta name="description" content="元力士が経営する街の花屋です。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="osumou-flowers/favicon_black.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/load.css">
 </head>
 <body>
   <div id="splash">
     <div id="splash_logo">
-      <img src="osumou-flowers/logo_black_square.png" alt="" class="fadeUp">
+      <img src="./osumou-flowers/logo_small.svg" alt="" class="fadeUp">
     </div>
+    <!--画像部分は適宜差し換えてください-->
+    <!--/splash-->
   </div>
-  <div id="container">
 
-    <header>
-      <div class="image-bg">
-        <h1 class="logo">
-          <img src="osumou-flowers/logo_black_rect.png">
-        </h1>
-      </div>
-      <div class="sp-menu">
-        <span id="open" class="material-icons md-36">menu</span>
-      </div>
-      <div class="overlay">
-        <span id="close" class="material-icons md-36">close</span>
-        <h1>
-          <img src="osumou-flowers/logo_black_rect.png">
-        </h1>
-        <nav>
-          <ul>
-            <li><a href="#">商品紹介</a></li>
-            <li><a href="#">ご購入させるお客様へ</a></li>
-            <li><a href="#">店舗案内</a></li>
-            <li><a href="#">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <div class="pc-menu">
-      <ul>
-        <li><a href="#">商品紹介</a></li>
-        <li><a href="#">ご購入させるお客様へ</a></li>
-        <li><a href="#">店舗案内</a></li>
-        <li><a href="#">お問い合わせ</a></li>
-      </ul>
-    </div>
-    <div class="items">
-      <div>
-        <h3>商品紹介</h3>
-        <div class="items-link">
-          <a href="#">商品の詳細を見る</a>
+  <main>
+    <div id="container">
+      <header>
+        <div class="image-bg">
+          <h1 class="logo">
+            <img src="osumou-flowers/logo_black_rect.png">
+          </h1>
         </div>
+        <div class="sp-menu">
+          <span id="open" class="material-icons md-36">menu</span>
+        </div>
+        <div class="overlay">
+          <span id="close" class="material-icons md-36">close</span>
+          <h1>
+            <img src="osumou-flowers/logo_black_rect.png">
+          </h1>
+          <nav>
+            <ul>
+              <li><a href="#">商品紹介</a></li>
+              <li><a href="#">ご購入させるお客様へ</a></li>
+              <li><a href="#">店舗案内</a></li>
+              <li><a href="#">お問い合わせ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="pc-menu">
+        <ul>
+          <li><a href="#">商品紹介</a></li>
+          <li><a href="#">ご購入させるお客様へ</a></li>
+          <li><a href="#">店舗案内</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+        </ul>
       </div>
-      <span>※日替わりで内容が変わります</span>
-      <div class="card-list">
-        <section class="card">
-          <img class="items-img" src="img/flower1.jpg" alt="小結の画像" loading=”lazy”>
-          <div class="items-content">
-            <h1 class="items-title">小結</h1>
-            <p class="items-text">金額:¥980</p>
-          </div>
-        </section>
-        <section class="card">
-          <img class="items-img" src="img/flower1.jpg" alt="大関の画像" loading=”lazy”>
-          <div class="items-content">
-            <h1 class="items-title">大関</h1>
-            <p class="items-text">金額:¥3,980</p>
-          </div>
-        </section>
-        <section class="card">
-          <img class="items-img" src="img/flower1.jpg" alt="横綱の画像" loading=”lazy”>
-          <div class="items-content">
-            <h1 class="items-title">横綱</h1>
-            <p class="items-text">金額:¥9,800</p>
-          </div>
-        </section>
-      </div>
-    </div>
-    <div class="container">
-      <div>
-        <h3>ご購入させるお客様へ</h3>
-        <p class="customer-info">当店のご注文は現在、店頭からのみのご注文に限ります<br>お花に関するご相談も承っておりますので、店頭もしくは電話からお気軽にどうぞ。</p>
-        <div class="ways-all">
-          <div class="ways">
-            <div>
-              <span class="material-icons">shopping_cart</span>
-              <h4>ご注文方法</h4>
-            </div>
-            <p>店頭からのみのご注文となります。</p>
-          </div>
-          <div class="ways">
-            <div>
-              <span class="material-icons">payment</span>
-              <h4>お支払い方法</h4>
-            </div>
-            <p>キャッシュレスのみの取り扱いとなります。</p>
-          </div>
-          <div class="ways">
-            <div>
-              <span class="material-icons">send</span>
-              <h4>返品について</h4>
-            </div>
-            <p>お客様ご都合の返品は一切お受け致しかねます。</p>
+      <div class="items">
+        <div>
+          <h3>商品紹介</h3>
+          <div class="items-link">
+            <a href="#">商品の詳細を見る</a>
           </div>
         </div>
-      </div>
-      <div>
-        <h3>店舗案内</h3>
-        <div class="shop-info">
-          <div class="shop-summary">
-            <table>
-              <tr>
-                <th>店舗名</th>
-                <td>osumou flowers</td>
-              </tr>
-              <tr>
-                <th>所在地</th>
-                <td>東京都目黒区東山x-x-x</td>
-              </tr>
-              <tr>
-                <th>TEL</th>
-                <td>03-xxxx-xxxx</td>
-              </tr>
-              <tr>
-                <th>営業時間</th>
-                <td>11:00-20:00</td>
-              </tr>
-              <tr>
-                <th>定休日</th>
-                <td>月曜日</td>
-              </tr>
-            </table>
-          </div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6484.425742079419!2d139.68624907755813!3d35.647126639308084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4ad501810c5%3A0xa6891c9764a2651b!2z44CSMTUzLTAwNDMg5p2x5Lqs6YO955uu6buS5Yy65p2x5bGx!5e0!3m2!1sja!2sjp!4v1629360738208!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <span>※日替わりで内容が変わります</span>
+        <div class="card-list">
+          <section class="card">
+            <img class="items-img" src="img/flower1.jpg" alt="小結の画像" loading=”lazy”>
+            <div class="items-content">
+              <h1 class="items-title">小結</h1>
+              <p class="items-text">金額:¥980</p>
+            </div>
+          </section>
+          <section class="card">
+            <img class="items-img" src="img/flower1.jpg" alt="大関の画像" loading=”lazy”>
+            <div class="items-content">
+              <h1 class="items-title">大関</h1>
+              <p class="items-text">金額:¥3,980</p>
+            </div>
+          </section>
+          <section class="card">
+            <img class="items-img" src="img/flower1.jpg" alt="横綱の画像" loading=”lazy”>
+            <div class="items-content">
+              <h1 class="items-title">横綱</h1>
+              <p class="items-text">金額:¥9,800</p>
+            </div>
+          </section>
         </div>
       </div>
-    </div>
-    <section class="contact">
-      <div class="contact-img">
-        <div class="container">
-          <h3>お問い合わせ</h3>
-          <div class="contact-area">
-            <p class="contact-text">
-              ご質問やご要望等何でもお気軽にお問い合わせ下さい。
-              <br>
-              お急ぎの方はお電話にて直接お問い合わせ下さい。
-            </p>
-            <div class="contact-way">
+      <div class="container">
+        <div>
+          <h3>ご購入させるお客様へ</h3>
+          <p class="customer-info">当店のご注文は現在、店頭からのみのご注文に限ります<br>お花に関するご相談も承っておりますので、店頭もしくは電話からお気軽にどうぞ。</p>
+          <div class="ways-all">
+            <div class="ways">
               <div>
-                <a href="tel:03-xxxx-xxxx">
-                  <span class="material-icons">phone</span>
-                  03-xxxx-xxxx
-                </a>
+                <span class="material-icons">shopping_cart</span>
+                <h4>ご注文方法</h4>
               </div>
-              <span>11:00-20:00(月曜休)</span>
+              <p>店頭からのみのご注文となります。</p>
+            </div>
+            <div class="ways">
+              <div>
+                <span class="material-icons">payment</span>
+                <h4>お支払い方法</h4>
+              </div>
+              <p>キャッシュレスのみの取り扱いとなります。</p>
+            </div>
+            <div class="ways">
+              <div>
+                <span class="material-icons">send</span>
+                <h4>返品について</h4>
+              </div>
+              <p>お客様ご都合の返品は一切お受け致しかねます。</p>
             </div>
           </div>
         </div>
+        <div>
+          <h3>店舗案内</h3>
+          <div class="shop-info">
+            <div class="shop-summary">
+              <table>
+                <tr>
+                  <th>店舗名</th>
+                  <td>osumou flowers</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                  <td>東京都目黒区東山x-x-x</td>
+                </tr>
+                <tr>
+                  <th>TEL</th>
+                  <td>03-xxxx-xxxx</td>
+                </tr>
+                <tr>
+                  <th>営業時間</th>
+                  <td>11:00-20:00</td>
+                </tr>
+                <tr>
+                  <th>定休日</th>
+                  <td>月曜日</td>
+                </tr>
+              </table>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6484.425742079419!2d139.68624907755813!3d35.647126639308084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f4ad501810c5%3A0xa6891c9764a2651b!2z44CSMTUzLTAwNDMg5p2x5Lqs6YO955uu6buS5Yy65p2x5bGx!5e0!3m2!1sja!2sjp!4v1629360738208!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
       </div>
-    </section>
-    <footer>
-      <p class="copy">© osumou flowers</p>
-    </footer>
-  </div>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXv
-ZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+      <section class="contact">
+        <div class="contact-img">
+          <div class="container">
+            <h3>お問い合わせ</h3>
+            <div class="contact-area">
+              <p class="contact-text">
+                ご質問やご要望等何でもお気軽にお問い合わせ下さい。
+                <br>
+                お急ぎの方はお電話にて直接お問い合わせ下さい。
+              </p>
+              <div class="contact-way">
+                <div>
+                  <a href="tel:03-xxxx-xxxx">
+                    <span class="material-icons">phone</span>
+                    03-xxxx-xxxx
+                  </a>
+                </div>
+                <span>11:00-20:00(月曜休)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p class="copy">© osumou flowers</p>
+      </footer>
+      <!--/container-->
+    </div>
+  </main>
+  <!--==============JQuery読み込み===============-->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+  <script src="js/load.js"></script>
 </body>
 </html>
