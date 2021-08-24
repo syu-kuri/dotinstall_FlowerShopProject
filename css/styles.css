@@ -17,30 +17,27 @@ body {
   margin: 0;
   padding: 0;
   background: #ffebcd;
-  /* background-image: url(../img/84676.png);
-  background-size: contain; */
 }
 header {
   display: flex;
-  background-image: url(../img/flower2.jpg);
-  background-size: cover;
+  background: #fff;
   width: 100%;
-  height: 250px;
+  height: 20%;
 }
 .image-bg {
-  position: absolute;
-  top: 40px;
-  right: 32px;
   margin: 0 auto;
+  vertical-align: middle;
 }
 .logo {
-  margin: 0;
+  margin: 15px;
   line-height: 64px;
+  vertical-align: middle;
 }
 .image-bg img {
   width: 65%;
   height: auto;
   vertical-align: middle;
+  object-fit: contain;
 }
 
 #open {
@@ -127,9 +124,13 @@ header {
   vertical-align: middle;
 }
 
+.pc-menu {
+  display: none;
+}
+
 .container {
   text-align: center;
-  margin: 0 16px;
+  margin: 0 auto;
   padding: 16px;
 }
 .container > div{
@@ -174,7 +175,7 @@ header {
 .container table tr td {
   text-align: start;
 }
-.container p {
+.customer-info {
   text-align: start;
 }
 .container .ways {
@@ -197,8 +198,9 @@ header {
 }
 
 .items {
-  /* background: #8E3E1F; */
   padding: 16px;
+  margin: 0 auto;
+  margin-bottom: 32px;
 }
 .items > div {
   display: flex;
@@ -232,7 +234,8 @@ header {
 }
 /* カード */
 .card {
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 30px;
   width: 250px;
   background: #fff;
   justify-content: space-between;
@@ -240,7 +243,7 @@ header {
   box-shadow: 0 2px 5px #ccc;
 }
 .card + .card {
-  margin-top: 0;
+  margin-top: 30;
 }
 .items-img {
   border-radius: 5px 5px 0 0;
@@ -301,17 +304,6 @@ header {
   display: block;
   animation: .3s fadeIn;
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 .shop-summary {
   background: #fff;
   padding: 8px;
@@ -333,13 +325,16 @@ iframe {
 }
 .contact-area {
   color: #fff;
-  margin: 0 16px;
+  margin: 0 auto;
   padding: 16px;
   border: 1px solid #fff;
   border-radius: 4px;
 }
+.contact-text {
+  text-align: start;
+}
 .contact-way {
-  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
 }
 .contact-way > span{
@@ -371,4 +366,153 @@ footer .copy {
   font-size: 14px;
   background: brown;
   color: #fff;
+}
+
+/* Loading背景画面設定　*/
+#splash {
+  /*fixedで全面に固定*/
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background:#333;
+    text-align:center;
+    color:#fff;
+  }
+  /* Loading画像中央配置　*/
+  #splash_logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Loading アイコンの大きさ設定　*/
+  #splash_logo img {
+    width:260px;
+  }
+  /* fadeUpをするアイコンの動き */
+  .fadeUp{
+  animation-name: fadeUpAnime;
+  animation-duration:0.5s;
+  animation-fill-mode:forwards;
+  opacity: 0;
+  }
+  @keyframes fadeUpAnime{
+    from {
+      opacity: 0;
+    transform: translateY(100px);
+    }
+    to {
+      opacity: 1;
+    transform: translateY(0);
+    }
+  }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+
+/* 画面幅切り替え */
+@media (min-width: 600px) {
+  .pc-menu {
+    display: block;
+    padding: 16px;
+    background: #ccc;
+  }
+  .pc-menu ul {
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-width: 40%;
+  }
+  .pc-menu li {
+    padding: 0 8px;
+  }
+  .pc-menu li:nth-child(1) {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+  }
+  .pc-menu li + li {
+    border-right: 1px solid #ccc;
+  }
+  .pc-menu a {
+    display: block;
+    line-height: 64px;
+    text-align: center;
+    text-decoration: none;
+  }
+  .pc-menu a:hover {
+    background: #f2f2f2;
+  }
+
+  .sp-menu {
+    display: none;
+  }
+
+  .items,
+  .container {
+    width: 80%;
+  }
+
+  .card-list {
+    justify-content: center;
+    max-width: 75%;
+    margin: 0 auto;
+  }
+
+  .ways-all{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+  .ways {
+    max-width: 30%;
+    margin-right: 16px;
+  }
+
+  .shop-info {
+    display: flex;
+  }
+  .shop-summary {
+    width: 40%;
+    height: auto;
+    min-height: 300px;
+  }
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact {
+    height: 450px;
+  }
+  .contact-area {
+    margin-top: 64px;
+    /* max-width: 60%; */
+    margin: 0 auto;
+  }
+  .contact-way {
+    width: 50%;
+    text-align: center;
+  }
+  .contact-text {
+    text-align: center;
+  }
+  .contact-way > div{
+    text-align: center;
+    margin: 16px 16px 0 16px;
+    border: 1px solid#fff;
+    border-radius: 4px;
+    font-size: 120%;
+  }
 }
